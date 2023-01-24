@@ -44,7 +44,7 @@ const TransactionInput = (props: TransactionInputProps) => {
 		console.log(props.selections)
 
 		TRANSACTIONS.forEach((transaction, i) => {
-			if (!props.selections?.includes(i + 1)) {
+			if (!props.selections?.includes(i)) {
 				newTransactions.push(transaction)
 			}
 		})
